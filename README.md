@@ -1,2 +1,2 @@
 # phpInstall
-Cookbook to install PHP7 and start web server
+Cookbook to install PHP7 and start Apache web server
