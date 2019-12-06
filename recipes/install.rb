@@ -26,7 +26,7 @@ execute 'Give dev group permissions and others read' do
         chmod -R 2774 #{['phpInstall']['htmlRootDir']}"
 end
 
-# group add dev \
-# usermod -a -G dev ec2-user \ 
+# group add dev-golfathon \
+# usermod -a -G dev-golfathon ec2-user \ 
 # chgrp -R dev-golfathon /var/www/html \
 # chmod -R 2774 /var/www/html
