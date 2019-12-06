@@ -26,7 +26,7 @@ execute 'Give dev group permissions and others read' do
         chmod -R 2774 #{['phpInstall']['htmlRootDir']}"
 end
 
-execute 'Get files from S3' do
-    command "aws s3 cp s3:://golfathon-web-app-dev/ #{node['phpInstall']['htmlRootDir'l} --recursive"
-    not_if { ::File.exist?("#{node['phpInstall']['htmlRootDir'l}/default_site") }
-end
+# group add dev \
+# usermod -a -G dev ec2-user \ 
+# chgrp -R dev-golfathon /var/www/html \
+# chmod -R 2774 /var/www/html
