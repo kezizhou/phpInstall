@@ -1,0 +1,17 @@
+# Put files/directores that should be ignored in this file when uploading
+# to a chef-server or supermarket.
+
+# SCM #
+#######
+.git
+*/.git
+.gitignore
+.gitmodules
+.gitconfig
+.gitattributes
+
+# Cookbooks #
+#############
+CONTRIBUTING*
+CHANGELOG*
+Testing
